@@ -5,7 +5,10 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-
+/**
+ * The main activity that is shown when our application is first launched. We specify this
+ * through the AndroidManifest.xml file
+ */
 public class MainActivity extends Activity {
 
     @Override
@@ -13,7 +16,6 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
