@@ -2,13 +2,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="64dp"
-    android:paddingRight="64dp"
+    android:paddingLeft="46dp"
+    android:paddingRight="46dp"
+    android:orientation="vertical"
     tools:context="com.uwcse.rememberme.MainActivity">
 
+	<EditText
+		android:id="@+id/input_todo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:visibility="gone"
+		android:hint="Type stuff in here!" />
+
+	<Button
+		android:id="@+id/add_item"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:visibility="gone"
+		android:text="Set TextView Text!!"/>
+
     <TextView
-        android:text="@string/hello_world"
+	    android:id="@+id/current_item"
+        android:text="Hello World"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+	    />
+
+	<ListView
+		android:id="@+id/todo_list"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent">
+
+		</ListView>
 
 </LinearLayout>
